@@ -5,16 +5,23 @@
   box-sizing: border-box;
 }
 
-body{
-  font-family:'Raleway', sans-serif;
+html{
+  font-size: 14px;
 }
 
+body{
+  font-family:'Raleway', sans-serif;
+
+}
 
 #header{
+  position: sticky;
+  top: 0;
   display: flex;
   justify-content: space-between;
   background: #111;
   padding: 0.8rem;
+  z-index: 1;
 }
 
 .logo{
@@ -83,5 +90,126 @@ body{
 
 .sidenav a:last-child{
   border: none;
+}
+
+
+/* ShowCase */
+
+#showcase{
+  height: 80vh;
+  background: #111111 url("../assets/banner.jpg") no-repeat center center/cover;
+ 
+}
+
+.showcase-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  height: 100%;
+  /* background: rgba(0, 0, 0, 0.4) */
+
+  background: linear-gradient(135deg, #ce1b28 0%, #111111 74%);
+  opacity: 0.7;
+}
+
+
+.showcase-content h1{
+  color: #fff;
+  font-size: 4rem;
+  font-weight: lighter;
+  word-spacing: 0.5rem;
+
+}
+
+.showcase-content p {
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  font-size: 1.28rem;
+  margin-top: 1rem;
+  padding: 0 3rem;
+}
+.showcase-content p span {
+  margin-top: 1rem;
+}
+
+#wraper{
+  padding: 5rem;
+  background: #eeeeee;
+}
+
+.sub-header h1{
+  color: #555555;
+  font-size: 1.75rem;
+  line-height: 1.5;
+}
+
+.sub-header p{
+  padding: 0.3rem 2rem 0 2rem;
+  color: #555555;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.feature{
+  border-radius: 4px;
+  height: 100%;
+  padding: 3rem;
+  text-align: center;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.025);
+  width: 100%;
+  margin:  3rem 0;
+}
+
+.feature div i {
+  font-size: 5rem;
+  color: #ce1b28;
+}
+
+.feature div h2 {
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.5;
+  margin: 0 0 1.5rem 0;
+}
+
+/* Information */
+
+.info{
+  background: #111111 url("../assets/cta01.jpg") no-repeat center center/cover;
+  height: 60vh;
+}
+
+.layer2{
+  padding: 4rem 4rem;
+  height: 100%;
+  background: 	rgba(206, 27, 40, 0.3);
+  text-align: center;
+}
+
+.layer2 h2{
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-weight: lighter;
+  color: #fff;
+}
+
+.layer2 p{
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #fff;
+}
+
+.main-footer{
+  background: #111;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.footer{
+  padding: 4rem;
+  text-align: center;
 }
 
