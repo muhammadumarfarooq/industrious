@@ -146,9 +146,9 @@ body{
 }
 
 .sub-header p{
+  text-align: center !important;
   padding: 0.3rem 2rem 0 2rem;
   color: #555555;
-  text-align: center;
   font-size: 1.2rem;
 }
 
