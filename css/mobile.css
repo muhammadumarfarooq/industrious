@@ -25,11 +25,63 @@ body{
 }
 
 .main-nav i{
-  color: rgba(255, 255, 255, 0.5);
   margin-right: 0.5rem;
-}
+} 
 
 .main-nav a{
   color: rgba(255, 255, 255, 0.5);
   text-decoration: none;
+  transition: color 0.1s ease-in-out;
 }
+
+.main-nav a:hover, .main-nav i:hover {
+  color: #f1f1f1;
+}
+
+/* Side Nav */
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 3.75rem;
+}
+
+.sidenav a {
+  margin: 0.5rem 1.5rem 0.5rem 1.5rem;
+  padding: 0.5rem 0;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+  display: block;
+  transition: 0.2s;
+  line-height: 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5)
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  font-weight: bold;
+  top: 0;
+  right: 1.56rem;
+  font-size: 2.5rem;
+  margin-left: 3.125rem;
+}
+
+.sidenav a:first-child{
+  border: none;
+}
+
+.sidenav a:last-child{
+  border: none;
+}
+
